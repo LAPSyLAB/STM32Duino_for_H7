@@ -11,30 +11,10 @@
 #include "pitches.h"
 
 #define REST 1
-// notes in the melody Mario
+// notes in the melody Lion sleeps tonight
 int melody[] = {
   NOTE_F4, NOTE_G4, NOTE_A4, NOTE_G4, NOTE_A4,
   NOTE_AS4, NOTE_A4, NOTE_G4, NOTE_F4, NOTE_G4,
-  NOTE_A4, NOTE_C4, NOTE_C4, NOTE_C4, NOTE_C4,
-  NOTE_C4,
-  
-  NOTE_F4, NOTE_G4, NOTE_A4, NOTE_G4, NOTE_A4,
-  NOTE_AS4, NOTE_A4, NOTE_G4, NOTE_F4, NOTE_G4,
-  NOTE_A4, NOTE_C4, NOTE_C4, NOTE_C4, NOTE_C4,
-  NOTE_C4,  REST, NOTE_A4,
-  
-  NOTE_A4, NOTE_A4, NOTE_A4, NOTE_A4, NOTE_A4, NOTE_A4, NOTE_A4, NOTE_A4,
-  NOTE_AS4, NOTE_AS4, NOTE_AS4, NOTE_AS4, NOTE_AS4, NOTE_AS4, NOTE_AS4, NOTE_AS4,
-  NOTE_A4, NOTE_A4, NOTE_A4, NOTE_A4, NOTE_A4, NOTE_A4, NOTE_A4, NOTE_A4,
-  NOTE_G4, NOTE_G4, NOTE_G4, NOTE_G4, NOTE_G4, NOTE_G4, NOTE_G4, NOTE_G4,
-  
-  NOTE_A4, NOTE_A4, NOTE_A4, NOTE_A4, NOTE_A4, NOTE_A4, NOTE_A4, NOTE_A4,
-  NOTE_AS4, NOTE_AS4, NOTE_AS4, NOTE_AS4, NOTE_AS4, NOTE_AS4, NOTE_AS4, NOTE_AS4,
-  NOTE_A4, NOTE_A4, NOTE_A4, NOTE_A4, NOTE_A4, NOTE_A4, NOTE_A4, NOTE_A4,
-  NOTE_G4, NOTE_G4, NOTE_G4, NOTE_G4, NOTE_G4, NOTE_G4, NOTE_G4, NOTE_G4,
-  
-  NOTE_F4, NOTE_G4, NOTE_A4, NOTE_G4, NOTE_A4,
-  NOTE_AS4, NOTE_A4, NOTE_G4, NOTE_F4, NOTE_G4,
   NOTE_A4, NOTE_G4, NOTE_F4, NOTE_A4,
   NOTE_G4,
   NOTE_C5, NOTE_A4, NOTE_G4, NOTE_A4, NOTE_C5,
@@ -47,84 +27,13 @@ int melody[] = {
   NOTE_A4, NOTE_C4, NOTE_C4, NOTE_C4, NOTE_C4,
   NOTE_C4,
   
-  REST, NOTE_A4, NOTE_G4, NOTE_F4, NOTE_E4, NOTE_D4, NOTE_C4, 
-  NOTE_D4,
-  REST, NOTE_A4, NOTE_G4, NOTE_F4, NOTE_E4, NOTE_D4, NOTE_C4, 
-  NOTE_D4,
-  
-  NOTE_F4, NOTE_G4, NOTE_A4, NOTE_G4, NOTE_A4,
-  NOTE_AS4, NOTE_A4, NOTE_G4, NOTE_F4, NOTE_G4,
-  NOTE_A4, NOTE_G4, NOTE_F4, NOTE_A4,
-  NOTE_G4,
-  NOTE_C5, NOTE_A4, NOTE_G4, NOTE_A4, NOTE_C5,
-  NOTE_AS4, NOTE_A4, NOTE_G4, NOTE_F4, NOTE_G4,
-  NOTE_A4, NOTE_G4, NOTE_F4, NOTE_A4,
-  NOTE_G4,
-  
-  NOTE_C5,
-  NOTE_C5, NOTE_AS4, NOTE_C5, NOTE_AS4,
-  NOTE_A4, NOTE_C4, NOTE_C4, NOTE_C4, NOTE_C4,
-  NOTE_C4,
-  
-  REST, NOTE_A4, NOTE_G4, NOTE_F4, NOTE_E4, NOTE_D4, NOTE_C4, 
-  NOTE_D4,
-  REST, NOTE_A4, NOTE_G4, NOTE_F4, NOTE_E4, NOTE_D4, NOTE_C4, 
-  NOTE_D4,
-  
-  NOTE_F4, NOTE_G4, NOTE_A4, NOTE_G4, NOTE_A4,
-  NOTE_AS4, NOTE_A4, NOTE_G4, NOTE_F4, NOTE_G4,
-  NOTE_A4, NOTE_C4, NOTE_C4, NOTE_C4, NOTE_C4,
-  NOTE_C4, 
-  
-  NOTE_F4, NOTE_G4, NOTE_A4, NOTE_G4, NOTE_A4,
-  NOTE_AS4, NOTE_A4, NOTE_G4, NOTE_F4, NOTE_G4,
-  NOTE_A4, NOTE_G4, NOTE_F4, NOTE_A4,
-  NOTE_G4,
-  NOTE_C5, NOTE_A4, NOTE_G4, NOTE_A4, NOTE_C5,
-  NOTE_AS4, NOTE_A4, NOTE_G4, NOTE_F4, NOTE_G4,
-  NOTE_A4, NOTE_G4, NOTE_F4, NOTE_A4,
-  NOTE_G4,
-  
-  NOTE_C5,
-  NOTE_C5, NOTE_AS4, NOTE_C5, NOTE_AS4,
-  NOTE_A4, NOTE_C4, NOTE_C4, NOTE_C4, NOTE_C4,
-  NOTE_C4,
-  
-  REST, NOTE_A4, NOTE_G4, NOTE_F4, NOTE_E4, NOTE_D4, NOTE_C4, 
-  NOTE_D4,
-  REST, NOTE_A4, NOTE_G4, NOTE_F4, NOTE_E4, NOTE_D4, NOTE_C4, 
-  NOTE_D4,
-  
-  NOTE_F4, NOTE_G4, NOTE_A4, NOTE_G4, NOTE_A4,
-  NOTE_AS4, NOTE_A4, NOTE_G4, NOTE_F4, NOTE_G4,
-  NOTE_A4, NOTE_C4, NOTE_C4, NOTE_C4, NOTE_C4,
-  NOTE_C4
+
 };
 
 // note durations: 4 = quarter note, 8 = eighth note, etc.:
 int noteDurations[] = {
   4, 4, 8, 4, 8,
   4, 4, 8, 4, 8,
-  4, 8, 4, 8, 4,
-  1,
-  
-  4, 4, 8, 4, 8,
-  4, 4, 8, 4, 8,
-  4, 8, 4, 8, 4,
-  2, 8, 16,
-  
-  8, 16, 8, 16, 8, 16, 8, 16,
-  8, 16, 8, 16, 8, 16, 8, 16,
-  8, 16, 8, 16, 8, 16, 8, 16,
-  8, 16, 8, 16, 8, 16, 8, 16,
-  
-  8, 16, 8, 16, 8, 16, 8, 16,
-  8, 16, 8, 16, 8, 16, 8, 16,
-  8, 16, 8, 16, 8, 16, 8, 16,
-  8, 16, 8, 16, 8, 16, 8, 16,
-  
-  4, 4, 8, 4, 8,
-  4, 4, 8, 4, 8,
   4, 4, 4, 4,
   1,
   4, 4, 8, 4, 8,
@@ -137,58 +46,6 @@ int noteDurations[] = {
   4, 8, 4, 8, 4,
   1,
   
-  4, 8, 8, 8, 8, 8, 8, 
-  1,
-  4, 8, 8, 8, 8, 8, 8, 
-  1,
-  
-  4, 4, 8, 4, 8,
-  4, 4, 8, 4, 8,
-  4, 4, 4, 4,
-  1,
-  4, 4, 8, 4, 8,
-  4, 4, 8, 4, 8,
-  4, 4, 4, 4,
-  1,
-  
-  1,
-  4, 8, 8, 2,
-  4, 8, 4, 8, 4,
-  1,
-  
-  4, 8, 8, 8, 8, 8, 8, 
-  1,
-  4, 8, 8, 8, 8, 8, 8, 
-  1,
-  
-  4, 4, 8, 4, 8,
-  4, 4, 8, 4, 8,
-  4, 8, 4, 8, 4,
-  1, 
-  
-  4, 4, 8, 4, 8,
-  4, 4, 8, 4, 8,
-  4, 4, 4, 4,
-  1,
-  4, 4, 8, 4, 8,
-  4, 4, 8, 4, 8,
-  4, 4, 4, 4,
-  1,
-  
-  1,
-  4, 8, 8, 2,
-  4, 8, 4, 8, 4,
-  1,
-  
-  4, 8, 8, 8, 8, 8, 8, 
-  1,
-  4, 8, 8, 8, 8, 8, 8, 
-  1,
-  
-  4, 4, 8, 4, 8,
-  4, 4, 8, 4, 8,
-  4, 8, 4, 8, 4,
-  1
 };
 
 const int num_elements_in_arr = sizeof(melody)/sizeof(melody[0]);
@@ -212,7 +69,7 @@ void setup() {
 }
 
 void loop() {
-          // iterate over the notes of the melody:
+        // iterate over the notes of the melody:
         for (int thisNote = 0; thisNote < num_elements_in_arr; thisNote++) {
       
           // to calculate the note duration, take one second divided by the note type.
@@ -225,23 +82,26 @@ void loop() {
           analogWrite(PD_12, 128); // Start PWM on Pin, at melody[thisNote] Hz with 50% duty cycle
           analogWrite(PD_13, 128); // Start PWM on Pin, at melody[thisNote] Hz with 50% duty cycle
           // tone(8, melody[thisNote], noteDuration);
-          Serial3.print("   Note [Hz]:");
-          Serial3.println(melody[thisNote]);
+
+          
+          Serial3.print("   Note (#");
+          Serial3.print(thisNote);
+          Serial3.print(") [Hz]:");
+          Serial3.print(melody[thisNote]);
+          Serial3.print("   Duration:");
+          Serial3.println(noteDuration);
           
           delay(noteDuration);
       
           // stop the tone playing:
-          //noTone(8);
-//          digitalWrite(PA_3,LOW);
-          analogWriteFrequency(1); // Set PMW period to Note Hz
-          analogWrite(PA_3, 128); // Stop PWM on PA3
+          analogWrite(PA_3, 0); // Start PWM on Pin, at melody[thisNote] Hz with 50% duty cycle
+          analogWrite(PD_12, 0); // Start PWM on Pin, at melody[thisNote] Hz with 50% duty cycle
+          analogWrite(PD_13, 0); // Start PWM on Pin, at melody[thisNote] Hz with 50% duty cycle
 
           // to distinguish the notes, set a minimum time between them.
-          // the note's duration + 30% seems to work well:
-          int pauseBetweenNotes = noteDuration * 2.30;
+          // the note's duration 30% seems to work well:
+          int pauseBetweenNotes = noteDuration * 0.3;
           delay(pauseBetweenNotes);
-          //delay(100);
-
         }
 
     
